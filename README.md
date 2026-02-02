@@ -73,9 +73,9 @@ form
 
 実際にサンプルを動かすと、例えばこんなUIが表示されます：
 
-![サンプルUI](./screenshots/sample_ui_1.png)
+![サンプルUI](./screenshots/sample_ui1.png)
 
-![動的UI例](./screenshots/sample_ui_2.png)
+![動的UI例](./screenshots/sample_ui2.png)
 
 ---
 
