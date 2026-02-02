@@ -61,11 +61,11 @@ form
 * 実際に動作するサンプルはこちらで確認できます:
   [DDUI_sample / sample.js](https://github.com/karonyt/DDUI_sample/blob/main/sample.js)
 
-* プレイヤー操作でUIを表示
+* 棒を右クリックでUIを表示
 
 * ボタン押下などのイベント処理
 
-* 複数画面や動的表示の例
+* 複数要素や動的変更の例
 
 ---
 
