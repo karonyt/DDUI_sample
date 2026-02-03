@@ -3,7 +3,7 @@
 DataDrivenUI (DDUI) のサンプル
 
 このリポジトリは、マインクラフト統合版（Windowsプレビュー版）で利用できる **DDUI / OreUI** を使ったUIサンプルをまとめています。
-DDUIは統合版内部データとして存在するOreUIを**Script APIから扱いやすくしたラッパー**です。
+データ駆動型UI（DDUI）と呼ばれる新しいUI機能が導入されています。DDUIは、新しい機能とまったく新しい外観を備えたモーダルフォームを作成するための新しい方法を導入します。
 
 ---
 
@@ -11,19 +11,21 @@ DDUIは統合版内部データとして存在するOreUIを**Script APIから�
 
 * マインクラフト統合版 **プレビュー版 (Windows)**
 * Script API の基本知識 (JavaScriptでワールド内イベント操作)
-* 実験的な利用であることの理解
+~~* 実験的な利用であることの理解~~
 
 ---
 
 ## セットアップ
 
-1. 以下のパスにある任意のバージョンのJSファイルを開く:
+※プレビュー版26.10.21から、内部データの書き換えは必要なくなりました
+
+~~1. 以下のパスにある任意のバージョンのJSファイルを開く:~~
 
 ```
 C:\XboxGames\Minecraft Preview for Windows\Content\data\behavior_packs\server_ui_library
 ```
 
-2. 末尾に次を追加して、DDUIをScript APIで使えるようにする:
+~~2. 末尾に次を追加して、DDUIをScript APIで使えるようにする:~~
 
 ```js
 import * as ui from "@minecraft/server-ui-private-bindings";
@@ -34,13 +36,15 @@ export const DataDrivenScreen = ui.DataDrivenScreen;
 export const testConstant = ui.testConstant;
 ```
 
-3. `custom_form_builder.js` をプロジェクトにコピーして利用します。
+1. `custom_form_builder.js` をアドオンのscriptsフォルダにコピーして利用します。
 
 ---
 
 ## ラッパー（custom_form_builder.js）の利用
 
-* DDUIにはまだ型定義がないため、ラッパーを使うと補完が効き安全に扱える
+~~* DDUIにはまだ型定義がないため、ラッパーを使うと補完が効き安全に扱える~~
+※プレビュー版26.10.21から、追加されました
+※ラッパーは今まで通り機能します
 
 ---
 
@@ -73,8 +77,8 @@ export const testConstant = ui.testConstant;
 
 * JSON UIはまだ使えるが将来的には廃止予定
 * DDUIを使うことで動的で柔軟なUI設計が可能
-* ラッパーを使うと補完が効く
-* 実験的利用であり、本番環境での使用は推奨されません
+~~* ラッパーを使うと補完が効く~~
+~~* 実験的利用であり、本番環境での使用は推奨されません~~
 
 ---
 
