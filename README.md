@@ -40,19 +40,7 @@ export const testConstant = ui.testConstant;
 
 ## ラッパー（custom_form_builder.js）の利用
 
-* DDUIには型定義がないため、ラッパーを使うと補完が効き安全に扱える
-* フォーム作成の手順を簡略化し、ActionForm/ModalFormの組み合わせも容易
-
-```js
-import { CustomFormBuilder } from "./custom_form_builder.js";
-
-const form = new CustomFormBuilder(player);
-form
-  .addHeader("Example UI")
-  .addButton("OK", () => console.log("OK pressed"))
-  .addButton("Cancel", () => console.log("Cancel pressed"))
-  .show();
-```
+* DDUIにはまだ型定義がないため、ラッパーを使うと補完が効き安全に扱える
 
 ---
 
